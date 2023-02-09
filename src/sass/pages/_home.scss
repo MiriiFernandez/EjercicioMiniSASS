@@ -1,3 +1,69 @@
 /* ********* */
 /* @HOME */
 /* ********* */
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10%;
+  height: 100vh;
+  background: rgb(23, 246, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(23, 246, 255, 1) 23%,
+    rgba(0, 127, 198, 1) 62%
+  );
+  .container {
+    width: 80vw;
+  }
+  .titulo {
+    @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+      width: 140%;
+    }
+  }
+  h4 {
+    font-family: "fuente";
+    color: #fff;
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+      font-size: 18px;
+    }
+  }
+
+  .añadir_email {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+
+    input {
+      padding: 18px 370px 18px 18px;
+      @media only screen and (min-device-width: 320px) and (orientation: portrait) {
+        padding: 15px 200px 15px 15px;
+        margin-left: 60px;
+      }
+      border-radius: 5px;
+      background: transparent;
+      border: 1px solid #fff;
+    }
+
+    input::placeholder {
+      color: rgb(212, 212, 212);
+      font-size: 1.2rem;
+    }
+
+    button {
+      margin-left: -120px;
+      background: transparent;
+      color: white;
+      border: 0;
+      font-family: "fuente";
+      font-size: 1.2;
+    }
+  }
+}
